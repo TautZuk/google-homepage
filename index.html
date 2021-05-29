@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: 5px 0px 0px 0px;
+        }
         #google-logo {
             display: flex;
             justify-content: center;
@@ -47,7 +53,18 @@
             font-size: 13px;
             text-decoration: none;
         }
+        .fooitem {
+            margin-right: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            color: #70757a;
+
+        }
         .navitem:hover {
+            text-decoration: underline;
+        }
+        .fooitem:hover {
             text-decoration: underline;
         }
         
@@ -69,11 +86,24 @@
         button:hover {
             border: 1px solid #dadce0;
         }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #dadce0;
+            background-color: #f2f2f2;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .left-urls {
+            padding: 15px;
+        }
+        .right-urls {
+            padding: 15px;
+        }
     </style>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
 </head>
 <body>
@@ -88,7 +118,7 @@
 <div id="google-logo">
     <img src="/images/googlelogo_color_272x92dp.png" alt="Google Logo">
 </div>
-<div>
+<div class="search">
     <form action="">
         <div id="search-box">
         <input id="search-input" type="text">
@@ -101,4 +131,17 @@
 </div>    
 
 </body>
+<footer class="foo">
+    <div class="left-urls">
+        <a class="fooitem" href="#">About</a>
+        <a class="fooitem" href="#">Advertising</a>
+        <a class="fooitem" href="#">Business</a>
+        <a class="fooitem" href="#">How Search Wroks</a>
+    </div>
+    <div class="right-urls">
+        <a class="fooitem" href="#">Privacy</a>
+        <a class="fooitem" href="#">Terms</a>
+        <a class="fooitem" href="#">Settings</a>
+    </div>
+</footer>
 </html>
