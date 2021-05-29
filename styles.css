@@ -20,7 +20,7 @@ body {
     padding: 0px 40px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    background: url(/images/outline_search_black_24dp.png) no-repeat 5px;
+    background: url(images/outline_search_black_24dp.png) no-repeat 5px;
 }
 #search-buttons {
     display: flex;
