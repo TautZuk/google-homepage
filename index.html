@@ -1,5 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        .search-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            top: 15em;
+        }
+        #search-input {
+            display: flex;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            height: 44px;
+            margin: 0 auto;
+            width: 40em;
+        }
+        #search-buttons {
+            display: flex;
+            justify-content:center;
+            margin: 10px;
+            
+        }
+        #search-input:hover {
+            box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+        }
+    </style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +33,19 @@
     <title>Google Homepage</title>
 </head>
 <body>
-    
+<div class="search-area">
+    <div id="google-logo">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+    </div>
+    <div id="search-box">
+        <form action="">
+            <input id="search-input" type="text"><br>
+            <div id="search-buttons">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+            </div>
+        </form>
+    </div>    
+</div>
 </body>
 </html>
